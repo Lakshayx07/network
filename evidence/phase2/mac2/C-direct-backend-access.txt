@@ -1,0 +1,15 @@
+Extension C | Mac 2 direct GET /api/status
+
+Redacted terminal excerpts. Both requests bypassed the edge.
+
+$ curl [backend A]/api/status
+HTTP/1.0 200 OK
+X-Backend: A
+{"backend": "A", "status": "ok"}
+
+$ curl [backend B]/api/status
+HTTP/1.0 200 OK
+X-Backend: B
+{"backend": "B", "status": "ok"}
+
+The transcript does not show whether strict firewall rules were active.

@@ -1,0 +1,20 @@
+Extension D | Mac 2 Nginx retry and upstream errors
+
+Excerpts from two earlier Nginx requests, in log order.
+
+Request 1
+[error] kevent() reported that connect() failed (61: Connection refused) while connecting to upstream [Backend A]
+[warn] upstream server temporarily disabled while connecting to upstream [Backend A]
+[error] kevent() reported that connect() failed (61: Connection refused) while connecting to upstream [Backend B]
+[warn] upstream server temporarily disabled while connecting to upstream [Backend B]
+
+Request 2
+[error] kevent() reported that connect() failed (61: Connection refused) while connecting to upstream [Backend B]
+[warn] upstream server temporarily disabled while connecting to upstream [Backend B]
+[error] kevent() reported that connect() failed (61: Connection refused) while connecting to upstream [Backend A]
+[warn] upstream server temporarily disabled while connecting to upstream [Backend A]
+
+Separate edge probe when neither upstream was reachable:
+HTTP/2 502
+x-edge: mac2
+x-upstream-status: 502, 502

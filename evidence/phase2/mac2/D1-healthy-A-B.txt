@@ -1,0 +1,51 @@
+Extension D | Mac 2 healthy A/B baseline
+
+Eight HTTPS GET /api/status responses. Times are relative to the first request.
+
+Request 1 (+0s)
+HTTP/2 200
+x-backend: B
+x-edge: mac2
+x-upstream-status: 200
+
+Request 2 (+1s)
+HTTP/2 200
+x-backend: A
+x-edge: mac2
+x-upstream-status: 200
+
+Request 3 (+2s)
+HTTP/2 200
+x-backend: B
+x-edge: mac2
+x-upstream-status: 200
+
+Request 4 (+3s)
+HTTP/2 200
+x-backend: A
+x-edge: mac2
+x-upstream-status: 200
+
+Request 5 (+4s)
+HTTP/2 200
+x-backend: B
+x-edge: mac2
+x-upstream-status: 200
+
+Request 6 (+6s)
+HTTP/2 200
+x-backend: A
+x-edge: mac2
+x-upstream-status: 200
+
+Request 7 (+7s)
+HTTP/2 200
+x-backend: B
+x-edge: mac2
+x-upstream-status: 200
+
+Request 8 (+8s)
+HTTP/2 200
+x-backend: A
+x-edge: mac2
+x-upstream-status: 200
