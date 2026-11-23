@@ -1,0 +1,8 @@
+Redacted result from the live Mac 2 installation
+
+Command: nginx -t
+Configuration syntax: OK
+Configuration test: successful
+Exit code: 0
+
+The check tested the installed configuration. The repository copies contain example deployment values.
