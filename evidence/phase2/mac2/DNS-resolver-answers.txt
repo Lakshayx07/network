@@ -1,0 +1,10 @@
+Mac 2 | Primary and backup DNS answers
+
+Redacted dig and OS lookup excerpts.
+
+$ dig @<primary-resolver> <app-host> A +noall +answer
+<app-host>.  30  IN  A  <current-main-edge-address>
+$ dig @<backup-resolver> <app-host> A +noall +answer
+<app-host>.  30  IN  A  <current-main-edge-address>
+$ dscacheutil -q host -a name <app-host>
+ip_address: <current-main-edge-address>

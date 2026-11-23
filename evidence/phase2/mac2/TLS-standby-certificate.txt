@@ -1,0 +1,11 @@
+Mac 2 | Standby certificate signing and verification
+
+Mac 2 signed the standby CSR with the team CA and staged the signed certificate
+and public CA certificate for transfer.
+
+$ openssl verify -CAfile <team-ca-file> standby.crt
+standby.crt: OK
+
+$ openssl x509 -in standby.crt -noout -ext subjectAltName
+X509v3 Subject Alternative Name:
+    DNS:<app-host>, DNS:<api-host>
