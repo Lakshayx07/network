@@ -1,6 +1,0 @@
-Redacted Mac 2 direct access results, in request order
-
-1. Backend A GET /api/status: connection failed, curl exit 7, no HTTP response.
-2. Backend B GET /api/status: connection failed, curl exit 7, no HTTP response.
-
-C remains unverified. Both services must return HTTP 200 from Mac 2 with their respective X-Backend headers while the Phase 2 firewall rules are in effect.

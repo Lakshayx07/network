@@ -1,7 +1,0 @@
-Redacted Mac 2 edge snapshot
-
-Nginx master and worker were running. A TLS request to the main edge reached
-Nginx and returned HTTP 502. The response identified Mac 2 as the serving
-edge and reported that both upstream attempts failed.
-
-The Mac 2 stop and restart record and the Mac 1 standby HTTPS capture are pending.

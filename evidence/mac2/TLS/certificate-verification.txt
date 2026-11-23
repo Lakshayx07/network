@@ -1,8 +1,0 @@
-Redacted results from OpenSSL on the main and standby certificate files
-
-Verification                               Main edge   Standby edge
-Trust chain and application hostname        OK          OK
-Trust chain and API hostname                OK          OK
-
-Each certificate included both DNS names in its SAN extension.
-OpenSSL verified each hostname for TLS server use against the team CA.
