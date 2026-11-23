@@ -1,0 +1,4 @@
+table <cn_edges> persist { 10.7.3.111 }
+pass in quick on lo0 proto tcp from any to any port { 3001, 3002 } keep state
+pass in quick inet proto tcp from <cn_edges> to any port { 3001, 3002 } keep state
+block return in quick proto tcp from any to any port { 3001, 3002 }

@@ -1,0 +1,2 @@
+anchor "200.AirDrop/*" all
+anchor "250.ApplicationFirewall/*" all

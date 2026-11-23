@@ -1,0 +1,6 @@
+subject=CN=app.team1.test
+issuer=CN=team1 Local Root CA
+notBefore=Nov 23 21:32:13 2026 GMT
+notAfter=Feb 21 21:32:13 2027 GMT
+X509v3 Subject Alternative Name: 
+    DNS:app.team1.test, DNS:api.team1.test

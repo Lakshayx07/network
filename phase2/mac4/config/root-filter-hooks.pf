@@ -1,0 +1,2 @@
+scrub-anchor "com.apple/*"
+anchor "com.apple/*"

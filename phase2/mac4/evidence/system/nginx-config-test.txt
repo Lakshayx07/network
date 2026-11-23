@@ -1,0 +1,2 @@
+nginx: the configuration file /Users/lakshay.yadav2024nst.rishihood.edu.in/cn-phase2/standby/nginx.conf syntax is ok
+nginx: configuration file /Users/lakshay.yadav2024nst.rishihood.edu.in/cn-phase2/standby/nginx.conf test is successful

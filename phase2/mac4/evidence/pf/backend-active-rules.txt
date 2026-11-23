@@ -1,0 +1,24 @@
+@0 pass in quick on lo0 proto tcp from any to any port = 3001 flags S/SA keep state
+  [ Owner : nil          Priority : 0     ]
+  [ Evaluations: 271084    Packets: 0         Bytes: 0           States: 0     ]
+  [ Inserted: uid 0 pid 44691 ]
+@1 pass in quick on lo0 proto tcp from any to any port = 3002 flags S/SA keep state
+  [ Owner : nil          Priority : 0     ]
+  [ Evaluations: 25234     Packets: 42        Bytes: 3298        States: 0     ]
+  [ Inserted: uid 0 pid 44691 ]
+@2 pass in quick inet proto tcp from <cn_edges:1> to any port = 3001 flags S/SA keep state
+  [ Owner : nil          Priority : 0     ]
+  [ Evaluations: 245441    Packets: 0         Bytes: 0           States: 0     ]
+  [ Inserted: uid 0 pid 44691 ]
+@3 pass in quick inet proto tcp from <cn_edges:1> to any port = 3002 flags S/SA keep state
+  [ Owner : nil          Priority : 0     ]
+  [ Evaluations: 0         Packets: 0         Bytes: 0           States: 0     ]
+  [ Inserted: uid 0 pid 44691 ]
+@4 block return in quick proto tcp from any to any port = 3001
+  [ Owner : nil          Priority : 0     ]
+  [ Evaluations: 68990     Packets: 0         Bytes: 0           States: 0     ]
+  [ Inserted: uid 0 pid 44691 ]
+@5 block return in quick proto tcp from any to any port = 3002
+  [ Owner : nil          Priority : 0     ]
+  [ Evaluations: 68722     Packets: 16        Bytes: 1024        States: 0     ]
+  [ Inserted: uid 0 pid 44691 ]
